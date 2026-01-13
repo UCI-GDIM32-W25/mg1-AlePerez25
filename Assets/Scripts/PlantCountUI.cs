@@ -8,6 +8,13 @@ public class PlantCountUI : MonoBehaviour
 
     public void UpdateSeeds (int seedsLeft, int seedsPlanted)
     {
+
+        //Con esto necesitas actualizar el texto el UI
+        //pero es importante asignarlo al script pplayer 
+        //porque enonces si se actualiza 
+        //al igual que la compudadora.
         
+        _plantedText.text = seedsPlanted.ToString();
+        _remainingText.text = seedsLeft.ToString();
     }
 }
